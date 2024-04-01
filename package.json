@@ -1,0 +1,20 @@
+{
+  "name": "kfe",
+  "version": "0.0.1",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuyidm/kfe.git"
+  },
+  "keywords": [
+    "cli",
+    "react",
+    "eslint-config"
+  ],
+  "author": "yuyidm",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuyidm/kfe/issues"
+  },
+  "homepage": "https://github.com/yuyidm/kfe#readme"
+}
