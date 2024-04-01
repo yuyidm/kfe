@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/yuyidm/kfe/issues"
   },
-  "homepage": "https://github.com/yuyidm/kfe#readme"
+  "homepage": "https://github.com/yuyidm/kfe#readme",
+  "devDependencies": {
+    "standard": "^17.1.0"
+  }
 }
