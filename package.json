@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/yuyidm/kfe#readme",
   "devDependencies": {
+    "lodash": "^4.17.21",
     "standard": "^17.1.0"
   }
 }

@@ -1,0 +1,75 @@
+require('@rushstack/eslint-patch/modern-module-resolution');
+
+module.exports = {
+  env: {
+    browser: true,
+    es2024: true,
+  },
+  parserOptions: {
+    ecmaVersion: 15,
+    sourceType: 'module',
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+    'import/resolver': 'webpack',
+  },
+  overrides: [
+    {
+      env: {
+        node: true,
+      },
+      files: ['.eslintrc.{js,cjs}'],
+      parserOptions: {
+        sourceType: 'script',
+      },
+    },
+  ],
+  plugins: ['react'],
+  extends: [
+    'eslint:recommended',
+    'airbnb-base',
+    'plugin:react/recommended',
+    'plugin:react-hooks/recommended',
+    'plugin:react/jsx-runtime',
+    'plugin:prettier/recommended',
+  ],
+  rules: {
+    'no-unused-vars': 'warn',
+    'no-restricted-syntax': 'off',
+    'no-return-assign': 'off',
+    'no-plusplus': 'off',
+    'no-continue': 'off',
+    'no-unused-expressions': 'off',
+    'no-promise-executor-return': 'off',
+    'no-underscore-dangle': 'off',
+    'no-case-declarations': 'off',
+    'no-nested-ternary': 'off',
+    'operator-assignmenty': 'off',
+    'max-classes-per-file': 'off',
+    'func-names': 'off',
+    'prefer-spread': 'off',
+    'consistent-return': 'off',
+    'global-require': 'off',
+    'default-param-last': 'off',
+    'no-return-await': 'off',
+    'prefer-destructuring': 'off',
+    'class-methods-use-this': 'off',
+    'default-case': 'off',
+    'import/no-dynamic-require': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    'import/no-cycle': 'off',
+    'import/prefer-default-export': 'off',
+    'import/no-named-as-default': 'off',
+    'import/no-named-as-default-member': 'off',
+    'react/jsx-filename-extension': ['warn', {extensions: ['.js', '.jsx']}],
+    'react/prop-types': 'off',
+    'react/forbid-prop-types': 'off',
+    'react/jsx-props-no-spreading': 'off',
+    'react/require-default-props': 'off',
+    'react/default-props-match-prop-types': 'off',
+    'react/self-closing-comp': ['error', {component: true, html: true}],
+    'react/display-name': 'off',
+  },
+};

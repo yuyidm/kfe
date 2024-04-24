@@ -1,0 +1,28 @@
+{
+  "name": "@kfe/cli",
+  "version": "0.0.1",
+  "description": "一个集成webpack、eslint、React的前端脚手架",
+  "keywords": [
+    "fe",
+    "cli",
+    "webpack",
+    "eslint",
+    "react",
+    "template"
+  ],
+  "main": "lib/index.js",
+  "type": "commonjs",
+  "bin": {
+    "kfe": "bin/index.js"
+  },
+  "files": [
+    "bin",
+    "lib"
+  ],
+  "devDependencies": {
+    "@kfe/webpack-config": "workspace:*",
+    "@kfe/utils": "workspace:*",
+    "commander": "^12.0.0",
+    "inquirer": "^9.2.16"
+  }
+}
